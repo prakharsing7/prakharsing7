@@ -43,6 +43,9 @@ I'm also the author of [GridMind](https://github.com/prakharsing7/gridmind) — 
 **🎬 Recently Watched**
 
 <!-- LETTERBOXD-START -->
+| <a href="https://letterboxd.com/whattheprak/film/kill-bill-vol-2/"><img src="https://a.ltrbxd.com/resized/sm/upload/ka/7q/dh/8m/bxbX4sHZHcy81dnNs4VAVs7HXDL-0-600-0-900-crop.jpg?v=52e9a07730" width="120" title="Kill Bill: Vol. 2"/></a> | <a href="https://letterboxd.com/whattheprak/film/stranger-than-fiction-2006/"><img src="https://a.ltrbxd.com/resized/film-poster/5/1/1/2/0/51120-stranger-than-fiction-0-600-0-900-crop.jpg?v=14ee3e1526" width="120" title="Stranger Than Fiction"/></a> | <a href="https://letterboxd.com/whattheprak/film/john-wick-chapter-4/"><img src="https://a.ltrbxd.com/resized/film-poster/5/3/0/8/8/2/530882-john-wick-chapter-4-0-600-0-900-crop.jpg?v=bc32219057" width="120" title="John Wick: Chapter 4"/></a> | <a href="https://letterboxd.com/whattheprak/film/john-wick-chapter-3-parabellum/"><img src="https://a.ltrbxd.com/resized/film-poster/3/9/0/0/3/9/390039-john-wick-chapter-3-parabellum-0-600-0-900-crop.jpg?v=589aeaad00" width="120" title="John Wick: Chapter 3 – Parabellum"/></a> |
+| :---: | :---: | :---: | :---: |
+| [Kill Bill: Vol. 2](https://letterboxd.com/whattheprak/film/kill-bill-vol-2/) | [Stranger Than Fiction](https://letterboxd.com/whattheprak/film/stranger-than-fiction-2006/) | [John Wick: Chapter 4](https://letterboxd.com/whattheprak/film/john-wick-chapter-4/) | [John Wick: Chapter 3 – Parabellum](https://letterboxd.com/whattheprak/film/john-wick-chapter-3-parabellum/) |
 <!-- LETTERBOXD-END -->
 
 ---

@@ -1,37 +1,38 @@
 import re
 import sys
-import xml.etree.ElementTree as ET
-from urllib.request import urlopen
+from urllib.request import urlopen, Request
 
 RSS_URL = "https://letterboxd.com/whattheprak/rss/"
 README_PATH = "README.md"
-LB_NS = "https://letterboxd.com"
 NUM_FILMS = 4
 
 
 def fetch_films():
-    with urlopen(RSS_URL) as resp:
-        root = ET.fromstring(resp.read())
+    req = Request(RSS_URL, headers={"User-Agent": "Mozilla/5.0 (compatible; profile-readme-bot/1.0)"})
+    with urlopen(req) as resp:
+        xml = resp.read().decode("utf-8")
 
+    items = re.findall(r"<item>(.*?)</item>", xml, re.DOTALL)
     films = []
-    for item in root.findall(".//item")[:NUM_FILMS]:
-        title_elem = item.find(f"{{{LB_NS}}}filmTitle")
-        title = title_elem.text if title_elem is not None else item.findtext("title", "")
+    for item in items[:NUM_FILMS]:
+        title_match = re.search(r"<letterboxd:filmTitle>(.*?)</letterboxd:filmTitle>", item)
+        title = title_match.group(1) if title_match else ""
 
-        link = item.findtext("link", "")
-        desc = item.findtext("description", "")
+        link_match = re.search(r"<link>(.*?)</link>", item)
+        link = link_match.group(1) if link_match else ""
 
-        img_match = re.search(r'<img src="([^"]+)"', desc)
+        img_match = re.search(r'<img src="([^"]+)"', item)
         poster = img_match.group(1) if img_match else ""
 
-        films.append({"title": title, "link": link, "poster": poster})
+        if title and link and poster:
+            films.append({"title": title, "link": link, "poster": poster})
 
     return films
 
 
 def build_card(films):
     cells = " | ".join(
-        f'<a href="{f["link"]}"><img src="{f["poster"]}" width="110" title="{f["title"]}"/></a>'
+        f'<a href="{f["link"]}"><img src="{f["poster"]}" width="120" title="{f["title"]}"/></a>'
         for f in films
     )
     sep = " | ".join(":---:" for _ in films)
