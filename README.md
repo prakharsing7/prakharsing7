@@ -15,25 +15,7 @@
 
 I'm a researcher and backend engineer at [Electric Miles](https://electricmiles.com), where I investigate the gap between OCPP smart charging specifications and real-world grid-responsive behaviour while working on creating a scalable CSMS. My work sits at the intersection of energy systems, convex optimisation, and distributed software — turning grid constraints and price signals into OCPP-native charging schedules that run on real hardware.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
----
-
-## 🔋 What I'm Building
-
-### [GridMind](https://github.com/prakharsing7/gridmind)
-> Optimal EV charging schedules via convex LP, output as OCPP-native `SetChargingProfile` messages ready to send to real chargers.
-
-```text
-EV sessions + grid constraints + price signal
-                ↓
-       CVXPY LP optimiser
-  (minimise cost · SoC + power + feeder limits)
-                ↓
-  OCPP SetChargingProfile.req JSON
-```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+I'm also the author of [GridMind](https://github.com/prakharsing7/gridmind) — an open-source Python library that solves EV charging schedules as a convex LP and outputs OCPP-native `SetChargingProfile` messages ready to send to real chargers.
 
 ---
 
@@ -41,29 +23,33 @@ EV sessions + grid constraints + price signal
 
 [![Python][python-shield]][python-url]
 [![TypeScript][ts-shield]][ts-url]
+[![React][react-shield]][react-url]
 [![Next.js][next-shield]][next-url]
+[![PHP][php-shield]][php-url]
+[![Symfony][symfony-shield]][symfony-url]
 [![CVXPY][cvxpy-shield]][cvxpy-url]
 [![Docker][docker-shield]][docker-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+---
+
+## 📊 Most Used Languages
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prakharsing7&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Top Languages" />
+</div>
 
 ---
 
-## 📊 GitHub Stats
+**🎬 Recently Watched**
 
-<div align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=prakharsing7&show_icons=true&theme=github_dark&hide_border=true" alt="GitHub Stats" />
-  &nbsp;
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=prakharsing7&layout=compact&theme=github_dark&hide_border=true&langs_count=6" alt="Top Languages" />
-</div>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- LETTERBOXD-START -->
+<!-- LETTERBOXD-END -->
 
 ---
 
 ## 📬 Connect
 
-[![LinkedIn][linkedin-shield]][linkedin-url] &nbsp; [![Portfolio][portfolio-shield]][portfolio-url] &nbsp; [prakhar@electricmiles.com](mailto:prakhar@electricmiles.com)
+[![LinkedIn][linkedin-shield]][linkedin-url] &nbsp; [![Portfolio][portfolio-shield]][portfolio-url] &nbsp; [![Email][email-shield]][email-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,13 +61,19 @@ EV sessions + grid constraints + price signal
 [portfolio-shield]: https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white
 [portfolio-url]: https://prakharsing7.vercel.app
 [email-shield]: https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white
-[email-url]: mailto:prakhar@electricmiles.com
+[email-url]: mailto:prakharsing7@gmail.com
 [python-shield]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 [python-url]: https://python.org
 [ts-shield]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
 [ts-url]: https://typescriptlang.org
+[react-shield]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[react-url]: https://react.dev
 [next-shield]: https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white
 [next-url]: https://nextjs.org
+[php-shield]: https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white
+[php-url]: https://php.net
+[symfony-shield]: https://img.shields.io/badge/Symfony-000000?style=for-the-badge&logo=symfony&logoColor=white
+[symfony-url]: https://symfony.com
 [cvxpy-shield]: https://img.shields.io/badge/CVXPY-FF6F00?style=for-the-badge&logo=python&logoColor=white
 [cvxpy-url]: https://cvxpy.org
 [docker-shield]: https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white
