@@ -2,32 +2,44 @@ import re
 import sys
 from urllib.request import urlopen, Request
 
-RSS_URL = "https://letterboxd.com/whattheprak/rss/"
+PROFILE_URL = "https://letterboxd.com/whattheprak/"
+FILM_BASE = "https://letterboxd.com/film"
 README_PATH = "README.md"
 NUM_FILMS = 4
+HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
 
 
-def fetch_films():
-    req = Request(RSS_URL, headers={"User-Agent": "Mozilla/5.0 (compatible; profile-readme-bot/1.0)"})
-    with urlopen(req) as resp:
-        xml = resp.read().decode("utf-8")
+def fetch(url):
+    with urlopen(Request(url, headers=HEADERS)) as resp:
+        return resp.read().decode("utf-8")
 
-    items = re.findall(r"<item>(.*?)</item>", xml, re.DOTALL)
+
+def fetch_favorites():
+    html = fetch(PROFILE_URL)
+
+    # Isolate the favourites section to avoid picking up recent-activity entries
+    fav_section = re.search(r'id="favourites"(.*?)(?=<section |$)', html, re.DOTALL)
+    if not fav_section:
+        return []
+    section_html = fav_section.group(1)
+
+    # Attribute order in HTML: data-item-name → data-item-slug → data-item-link
+    entries = re.findall(
+        r'data-item-name="([^"]+)"[^>]*data-item-slug="([^"]+)"[^>]*data-item-link="([^"]+)"',
+        section_html,
+    )
+
     films = []
-    for item in items[:NUM_FILMS]:
-        title_match = re.search(r"<letterboxd:filmTitle>(.*?)</letterboxd:filmTitle>", item)
-        title = title_match.group(1) if title_match else ""
-
-        link_match = re.search(r"<link>(.*?)</link>", item)
-        link = link_match.group(1) if link_match else ""
-
-        img_match = re.search(r'<img src="([^"]+)"', item)
-        poster = img_match.group(1) if img_match else ""
-
-        if title and link and poster:
-            films.append({"title": title, "link": link, "poster": poster})
+    for name, slug, link in entries[:NUM_FILMS]:
+        films.append({"slug": slug, "title": name, "link": f"https://letterboxd.com{link}"})
 
     return films
+
+
+def resolve_poster(slug):
+    html = fetch(f"{FILM_BASE}/{slug}/")
+    match = re.search(r'"image":"(https://a\.ltrbxd\.com/[^"]+)"', html)
+    return match.group(1) if match else ""
 
 
 def build_card(films):
@@ -61,8 +73,17 @@ def update_readme(card):
 
 
 if __name__ == "__main__":
-    films = fetch_films()
+    films = fetch_favorites()
     if not films:
-        print("No films found in RSS feed.", file=sys.stderr)
+        print("No favorite films found.", file=sys.stderr)
         sys.exit(1)
+
+    for film in films:
+        film["poster"] = resolve_poster(film["slug"])
+
+    films = [f for f in films if f["poster"]]
+    if not films:
+        print("Could not resolve any poster images.", file=sys.stderr)
+        sys.exit(1)
+
     update_readme(build_card(films))
