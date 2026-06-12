@@ -15,7 +15,7 @@
 
 I'm a researcher and backend engineer at [Electric Miles](https://electricmiles.com), where I investigate the gap between OCPP smart charging specifications and real-world grid-responsive behaviour while working on creating a scalable CSMS. My work sits at the intersection of energy systems, convex optimisation, and distributed software — turning grid constraints and price signals into OCPP-native charging schedules that run on real hardware.
 
-I'm also the author of [GridMind](https://github.com/prakharsing7/gridmind) — an open-source Python library that solves EV charging schedules as a convex LP and outputs OCPP-native `SetChargingProfile` messages ready to send to real chargers.
+Check out: [GridMind](https://github.com/prakharsing7/gridmind) — an open-source Python library that solves EV charging schedules as a convex LP and outputs OCPP-native `SetChargingProfile` messages ready to send to real chargers.
 
 ---
 
@@ -40,7 +40,7 @@ I'm also the author of [GridMind](https://github.com/prakharsing7/gridmind) — 
 
 ---
 
-**🎬 Recently Watched**
+**Letterboxd 4**
 
 <!-- LETTERBOXD-START -->
 | <a href="https://letterboxd.com/film/the-fabelmans/"><img src="https://a.ltrbxd.com/resized/film-poster/7/2/1/2/8/8/721288-the-fabelmans-0-230-0-345-crop.jpg?v=93ea6717b8" width="120" title="The Fabelmans (2022)"/></a> | <a href="https://letterboxd.com/film/hamilton-2020/"><img src="https://a.ltrbxd.com/resized/film-poster/4/8/5/3/0/9/485309-hamilton-0-230-0-345-crop.jpg?v=6430888d58" width="120" title="Hamilton (2020)"/></a> | <a href="https://letterboxd.com/film/3-idiots/"><img src="https://a.ltrbxd.com/resized/film-poster/3/8/9/9/9/38999-3-idiots-0-230-0-345-crop.jpg?v=890bae83d8" width="120" title="3 Idiots (2009)"/></a> | <a href="https://letterboxd.com/film/before-sunrise/"><img src="https://a.ltrbxd.com/resized/film-poster/5/1/9/7/4/51974-before-sunrise-0-230-0-345-crop.jpg?v=006e8fedea" width="120" title="Before Sunrise (1995)"/></a> |
