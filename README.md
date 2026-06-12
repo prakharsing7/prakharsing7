@@ -5,17 +5,15 @@
 [![Email][email-shield]][email-url]
 
 <div align="center">
-  <h1>👋 Hi, I'm Prakhar Singh</h1>
-  <p><em>AI &amp; Backend Engineer &nbsp;·&nbsp; Building open-source EV smart charging at Electric Miles</em></p>
+  <h1>👋 Hi, I'm Prakhar</h1>
+  <p><em>Backend Engineer &nbsp;·&nbsp; Moving EV smart charging forward at Electric Miles</em></p>
 </div>
 
 ---
 
 ## About Me
 
-I'm a researcher and platform engineer at [Electric Miles](https://electricmiles.com), where I investigate the gap between OCPP smart charging specifications and real-world grid-responsive behaviour. My work sits at the intersection of energy systems, convex optimisation, and distributed software — turning grid constraints and price signals into OCPP-native charging schedules that run on real hardware.
-
-When I'm not optimising EV fleets, I'm probably poking at computer vision, physics simulations, or building things that are harder than they should be.
+I'm a researcher and backend engineer at [Electric Miles](https://electricmiles.com), where I investigate the gap between OCPP smart charging specifications and real-world grid-responsive behaviour while working on creating a scalable CSMS. My work sits at the intersection of energy systems, convex optimisation, and distributed software — turning grid constraints and price signals into OCPP-native charging schedules that run on real hardware.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
