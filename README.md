@@ -13,7 +13,7 @@
 
 ## About Me
 
-I'm a researcher and backend engineer at [Electric Miles](https://electricmiles.com), where I investigate the gap between OCPP smart charging specifications and real-world grid-responsive behaviour while working on creating a scalable CSMS. My work sits at the intersection of energy systems, convex optimisation, and distributed software — turning grid constraints and price signals into OCPP-native charging schedules that run on real hardware.
+I'm a researcher and backend engineer at [Electric Miles](https://electricmiles.com), where I investigate the gap between OCPP smart charging specifications and real-world grid-responsive behaviour while working on creating a scalable CSMS. My work sits at the intersection of energy systems, convex optimisation and distributed software.
 
 Check out: [GridMind](https://github.com/prakharsing7/gridmind) — an open-source Python library that solves EV charging schedules as a convex LP and outputs OCPP-native `SetChargingProfile` messages ready to send to real chargers.
 
@@ -27,8 +27,12 @@ Check out: [GridMind](https://github.com/prakharsing7/gridmind) — an open-sour
 [![Next.js][next-shield]][next-url]
 [![PHP][php-shield]][php-url]
 [![Symfony][symfony-shield]][symfony-url]
+[![Swift][swift-shield]][swift-url]
 [![CVXPY][cvxpy-shield]][cvxpy-url]
 [![Docker][docker-shield]][docker-url]
+[![PostgreSQL][postgres-shield]][postgres-url]
+[![Redis][redis-shield]][redis-url]
+[![AWS][aws-shield]][aws-url]
 
 ---
 
@@ -81,3 +85,11 @@ Check out: [GridMind](https://github.com/prakharsing7/gridmind) — an open-sour
 [cvxpy-url]: https://cvxpy.org
 [docker-shield]: https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white
 [docker-url]: https://docker.com
+[postgres-shield]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
+[postgres-url]: https://postgresql.org
+[redis-shield]: https://img.shields.io/badge/Redis-DD0031?style=for-the-badge&logo=redis&logoColor=white
+[redis-url]: https://redis.io
+[aws-shield]: https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white
+[aws-url]: https://aws.amazon.com
+[swift-shield]: https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white
+[swift-url]: https://swift.org
